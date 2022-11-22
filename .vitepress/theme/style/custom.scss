@@ -1,0 +1,91 @@
+/*
+* @defaults https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css.
+*/
+
+:root {
+    --dk-green: #30b468;
+    --dk-grey: #171d26;
+    --bg-100: rgb(22, 27, 34);
+    --vp-custom-block-info-bg: #2d3c46;
+    --vp-custom-block-details-bg: #fff;
+    
+    --vp-nav-height-mobile: 42px;
+    --vp-nav-height-desktop: 55px;
+
+}
+
+.dark {
+    --vp-c-brand: var(--dk-green);
+    --vp-c-black: #13181f;
+    --vp-custom-block-details-bg: var(--vp-c-black);
+    --vp-c-bg: var(--vp-c-black);
+    
+    .modal {
+        background: var(--dk-grey);
+    }
+    
+    .VPNavBar .content{
+        background: rgb(19, 24, 31, 0.7) !important;
+    }
+    
+    .VPNav {
+        background-color: transparent !important;
+        //background-color: var(--vp-c-black) !important;
+    }
+
+    .VPImage.logo {
+        background: var(--dk-grey);
+    }
+    
+    .VPDoc{
+        background: var( --dk-grey );
+    }
+
+}
+
+.modal-back{
+    background-color: rgb(58, 63, 70, 0.7)
+}
+
+.VPImage.logo {
+    padding: 5px;
+    border-radius: 6px;
+    height: 32px;
+    background: var(--vp-c-white-soft);
+
+}
+
+.VPSidebar {
+    border-right: 1px solid var(--vp-c-divider-light);
+    padding-top: 0 !important;
+    margin-top: var(--vp-nav-height-desktop);
+}
+
+.VPNavBarTitle {
+    border-bottom: none !important;
+    
+    &.has-sidebar {
+        background-color: transparent !important;
+    }
+}
+
+.VPNav {
+    border-bottom: 1px solid var(--vp-c-divider-light);
+    //background-color: #fff !important;
+
+}
+
+.main {
+    .text {
+        max-width: 70vw;
+    }
+}
+
+.name .clip {
+    font-weight: 900;
+    font-size: 76px;
+    background: -webkit-linear-gradient(315deg,var(--dk-green) 40%,#64b4ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

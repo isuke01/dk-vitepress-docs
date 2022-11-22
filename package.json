@@ -1,0 +1,24 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "vite-plugin-search playground",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "flexsearch": "^0.7.31",
+    "markdown-it": "^13.0.1",
+    "sass": "^1.56.1",
+    "vite-plugin-inspect": "^0.5.0",
+    "vitepress": "^1.0.0-alpha.13",
+    "vitepress-plugin-search": "^1.0.4-alpha.15",
+    "vue": "^3.2.37"
+  }
+}
