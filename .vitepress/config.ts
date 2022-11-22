@@ -11,7 +11,7 @@ export default {
   themeConfig: {
     logo: './logo.png',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/DekodeInteraktiv' },
+      { icon: 'github', link: 'https://github.com/isuke01/dk-vitepress-docs' },
     ],
     footer: {
       license: {
