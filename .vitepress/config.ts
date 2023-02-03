@@ -1,15 +1,24 @@
 export default {
   // base: '/test/',
   lang: 'en-US',
-  title: 'Dekode',
-  description: 'Dekode documentation',
+  title: 'DK\'s Docs',
+  description: 'Docs and guides for T2, Dekode, Gutenberg',
   srcDir: 'src',
+  markdown: {
+    // https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-themes
+    theme: {
+      light: 'min-light',
+      dark: 'min-dark',
+    },
+    lineNumbers: true,
+  },
   //outDir: "./.vitepress/out",
+  lastUpdated: true,
   head: [
-    ['meta', { name: 'theme-color', content: 'red' }],
+    ['meta', { name: 'theme-color' }],
   ],
   themeConfig: {
-    logo: './logo.png',
+    logo: '/logo.png',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/isuke01/dk-vitepress-docs' },
     ],
@@ -21,6 +30,7 @@ export default {
       copyright: `Copyright © 2022-${new Date().getFullYear()}`
     },
     nav: [
+      { text: 'Genral', link: '/gutenberg/' },
       { text: 'T2', link: '/t2/getting-started' },
       { text: 'T2.teft.io', link: 'https://t2.teft.io', target: '_blank' },
       { text: 'DK Library', link: 'https://library.dekode.no', target: '_blank' },
@@ -38,16 +48,26 @@ export default {
     sidebar: {
       // This sidebar gets displayed when user is
       // under `guide` directory.
-      '/t2/': [
+      '/gutenberg/': [
         {
-          text: 'Guide',
+          text: 'Guides',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'First block', link: '/t2/' },
-            { text: 'Extend block', link: '/t2/' }, // /guide/one.md
-            { text: 'Something else', link: '/t2/' } // /guide/two.md
+            { text: 'Extend core block', link: '/gutenberg/guides/extend-wp-paragraph' },
+            { text: 'WP CLI Helpers', link: '/gutenberg/guides/wp-cli-helpers' },
           ]
         },
+      ],
+      '/t2/': [
+        // {
+        //   text: 'Guide',
+        //   items: [
+        //     // This shows `/guide/index.md` page.
+        //     { text: 'First block', link: '/t2/' },
+        //     { text: 'Extend block', link: '/t2/' }, // /guide/one.md
+        //     { text: 'Something else', link: '/t2/' } // /guide/two.md
+        //   ]
+        // },
         {
           text: 'Helpers, hooks and filtes',
           items: [
@@ -64,15 +84,15 @@ export default {
             { text: 'Factbox', link: '/t2/blocks/factbox' },
           ]
         },
-        {
-          text: 'Extensions',
-          items: [
-            // This shows `/guide/index.md` page.
-            { text: 'Index', link: '/guide/' }, // /guide/index.md
-            { text: 'One', link: '/guide/one' }, // /guide/one.md
-            { text: 'Two', link: '/guide/two' } // /guide/two.md
-          ]
-        }
+        // {
+        //   text: 'Extensions',
+        //   items: [
+        //     // This shows `/guide/index.md` page.
+        //     { text: 'Index', link: '/guide/' }, // /guide/index.md
+        //     { text: 'One', link: '/guide/one' }, // /guide/one.md
+        //     { text: 'Two', link: '/guide/two' } // /guide/two.md
+        //   ]
+        // }
       ],
     }
   }
