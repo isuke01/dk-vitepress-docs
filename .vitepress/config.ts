@@ -49,6 +49,13 @@ export default {
           ]
         },
         {
+          text: 'Helpers, hooks and filtes',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Helpers', link: '/t2/helpers/' },
+          ]
+        },
+        {
           text: 'Blocks',
           items: [
             // This shows `/guide/index.md` page.

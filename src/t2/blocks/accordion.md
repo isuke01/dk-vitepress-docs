@@ -1,9 +1,11 @@
-# Accordion
+---
+title: T2 Accordion
+date: git Last Modified
+---
+# Accordion 
 
-Accordion;
+Accordion;  
 Show (and hide) content in a list
-
-Last modified: November 16, 2022
 
 ## Block names
 
