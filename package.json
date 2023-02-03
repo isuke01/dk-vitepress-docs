@@ -1,7 +1,7 @@
 {
-  "name": "playground",
-  "version": "1.0.0",
-  "description": "vite-plugin-search playground",
+  "name": "dk-isu-docs",
+  "version": "1.0.1",
+  "description": "Vite DK docs and helpers",
   "main": "index.js",
   "type": "module",
   "scripts": {
