@@ -30,7 +30,8 @@ export default {
       copyright: `Copyright © 2022-${new Date().getFullYear()}`
     },
     nav: [
-      { text: 'Genral', link: '/gutenberg/' },
+      { text: 'DK CLI', link: '/dk-cli/' },
+      { text: 'Genral', link: '/general/' },
       { text: 'T2', link: '/t2/getting-started' },
       { text: 'T2.teft.io', link: 'https://t2.teft.io', target: '_blank' },
       { text: 'DK Library', link: 'https://library.dekode.no', target: '_blank' },
@@ -48,13 +49,14 @@ export default {
     sidebar: {
       // This sidebar gets displayed when user is
       // under `guide` directory.
-      '/gutenberg/': [
+      '/general/': [
         {
           text: 'Guides',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Extend core block', link: '/gutenberg/guides/extend-wp-paragraph' },
-            { text: 'WP CLI Helpers', link: '/gutenberg/guides/wp-cli-helpers' },
+            { text: 'Extend core block', link: '/general/guides/extend-wp-paragraph' },
+            { text: 'WP CLI Helpers', link: '/general/guides/wp-cli-helpers' },
+            { text: 'PHP switch', link: '/general/guides/php-switch-mac' },
           ]
         },
       ],
