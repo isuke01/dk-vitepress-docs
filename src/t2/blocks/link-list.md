@@ -46,24 +46,28 @@ The module can be customized using t2.json file.
 
 ## Style properties
 
-```theme.json
-Link text font size
-
+```
 --t2-link-list-typography-text-font-size
 Theme.json: wp.custom.t2-link-list.typography.text-font-size
 Default: 1.125rem
 Link text font weight
+```
 
+```
 --t2-link-list-typography-text-font-weight
 Theme.json: wp.custom.t2-link-list.typography.text-font-weight
 Default: 700
 Link description font size
+```
 
+```
 --t2-link-list-typography-description-font-size
 Theme.json: wp.custom.t2-link-list.typography.description-font-size
 Default: 1rem
 Item margin
+```
 
+```
 --t2-link-list-spacing-item-margin
 Theme.json: wp.custom.t2-link-list.spacing.item-margin
 Default: 0
