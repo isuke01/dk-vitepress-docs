@@ -85,6 +85,7 @@ export default {
             { text: 'Byline', link: '/t2/blocks/byline' },
             { text: 'Factbox', link: '/t2/blocks/factbox' },
             { text: 'Link list', link: '/t2/blocks/link-list' },
+            { text: 'Featured content layout', link: '/t2/blocks/featured-content-layout' },
           ]
         },
         // {
