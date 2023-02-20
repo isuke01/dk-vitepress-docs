@@ -84,6 +84,7 @@ export default {
             { text: 'Accordion', link: '/t2/blocks/accordion' },
             { text: 'Byline', link: '/t2/blocks/byline' },
             { text: 'Factbox', link: '/t2/blocks/factbox' },
+            { text: 'Link list', link: '/t2/blocks/link-list' },
           ]
         },
         // {
