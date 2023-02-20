@@ -43,4 +43,19 @@ function my_custom_args( array $args, string $post_type ) : array {
 
 - First you need to create two directoreis inside the theme directory
 - `t2` and inside `featured-content`
-- Create file `post-type-{crt_slug}.html`
+- Create file `post-type-{ctp_slug}.html` with the blocks HTML.
+
+You can use any registered, valid blocks.
+
+Example content:
+```js post-type-post.html
+<!-- wp:t2/post-link -->
+<!-- wp:t2/post-featured-image /-->
+<!-- wp:group {"align":"full","layout":{"inherit":false}} -->
+<div class="wp-block-group alignfull">
+	<!-- wp:t2/post-title /-->
+	<!-- wp:core/post-date {"displayType":"modified"} /-->
+</div>
+<!-- /wp:group -->
+<!-- /wp:t2/post-link -->
+```
