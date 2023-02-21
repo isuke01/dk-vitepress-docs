@@ -51,9 +51,10 @@ export default {
       // under `guide` directory.
       '/general/': [
         {
-          text: 'Guides',
+          text: 'Guides && help',
           items: [
             // This shows `/guide/index.md` page.
+            { text: 'Server side component', link: '/general/guides/server-side-render-component' },
             { text: 'Extend core block', link: '/general/guides/extend-wp-paragraph' },
             { text: 'WP CLI Helpers', link: '/general/guides/wp-cli-helpers' },
             { text: 'PHP switch', link: '/general/guides/php-switch-mac' },
