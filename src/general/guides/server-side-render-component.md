@@ -18,6 +18,7 @@ registerBlockType('ia/single-meta', {
 
 PHP register block (In this example I'm using PHP register)
 ```php
+add_action( 'init', __NAMESPACE__ . '\\register_single_meta_block' );
 /**
  * Outputs single meta text
  *
