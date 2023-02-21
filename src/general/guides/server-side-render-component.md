@@ -102,8 +102,8 @@ import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
 
 registerBlockType('ia/meta-image', {
-	edit: ({ context }) => {
-		return <ServerSideRender  attributes={{ post_id: context.postId }} block="ia/meta-image"  />
+	edit: ({ context, attributes }) => {
+		return <ServerSideRender  attributes={{ ...attributes, post_id: context.postId }} block="ia/meta-image"  />
 	},
 });
 ```
