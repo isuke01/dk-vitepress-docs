@@ -94,7 +94,9 @@ So if we want to use the `<ServerSideRender>` component as inner component of qu
 
 Lucky there is workaround!
 
-Inject custom varible into attribute that come from correct context (here the context is correct).
+Inject custom varible into attribute that come from correct context (here the context is correct).  
+
+**NOTE:** This example shows only post_id override, you may want also fix the post_type if that is important for you or other context elements. If you try to `console.log(context)` in the edit callback it contains correct context to see.
 ```js
 import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
