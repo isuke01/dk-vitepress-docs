@@ -55,6 +55,7 @@ export default {
           items: [
             // This shows `/guide/index.md` page.
             { text: 'Server side component', link: '/general/guides/server-side-render-component' },
+            { text: 'Use blocks as template part', link: '/general/guides/use-blocks-as-template-parts' },
             { text: 'Extend core block', link: '/general/guides/extend-wp-paragraph' },
             { text: 'WP CLI Helpers', link: '/general/guides/wp-cli-helpers' },
             { text: 'PHP switch', link: '/general/guides/php-switch-mac' },
@@ -82,9 +83,9 @@ export default {
           text: 'Blocks',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Accordion', link: '/t2/blocks/accordion' },
-            { text: 'Byline', link: '/t2/blocks/byline' },
-            { text: 'Factbox', link: '/t2/blocks/factbox' },
+            // { text: 'Accordion', link: '/t2/blocks/accordion' },
+            // { text: 'Byline', link: '/t2/blocks/byline' },
+            // { text: 'Factbox', link: '/t2/blocks/factbox' },
             { text: 'Link list', link: '/t2/blocks/link-list' },
             { text: 'Featured content layout', link: '/t2/blocks/featured-content-layout' },
           ]
