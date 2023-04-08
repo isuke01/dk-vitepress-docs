@@ -1,17 +1,22 @@
 # Server side rendered blocks (Since WP 5.5)
 
-If we have block that is not interactive with user, we can just use php. [Examples](https://github.com/DekodeInteraktiv/norsk-takst/blob/d4901fac15208ba4bb5332265a55f181767cdd09/packages/themes/norsktakst-theme/inc/block-partials.php#L24)
+If we have block that is not interactive with user, we can just use php rendered bloock.
 
-Simple example:
+
+Simple [example JS](https://github.com/DekodeInteraktiv/innovativeanskaffelser/blob/e02fecb0e1facd2a494043a9ce0dda53b5972631/packages/themes/innovative-anskaffelser/src/js/blocks/block-partials.js#L11)
+
+NOTE: In this case I'm using `urlQueryArgs` to pass the post id to the block because block going to be used inside WP Loop.
+SSR Blocks are async loaded and default post_id is passed from currently edited post; Check the [Dev's notes](#dev-notoes)
 
 Register edit view.
+
 ```js block.js
 import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
 
 registerBlockType('ia/single-meta', {
-	edit: () => {
-		return <ServerSideRender block="ia/single-meta" />;
+	edit: ({coontext}) => {
+		return <ServerSideRender urlQueryArgs={ {post_id : context.postId} } block="ia/single-meta" />;
 	},
 });
 ```
@@ -42,7 +47,7 @@ function register_single_meta_block(): void {
 }
 ```
 
-Render callback
+Render callback, [Example](https://github.com/DekodeInteraktiv/innovativeanskaffelser/blob/e02fecb0e1facd2a494043a9ce0dda53b5972631/packages/themes/innovative-anskaffelser/inc/block-partials.php#L72)
 ```php
 /**
  * Render callback for the block
@@ -52,7 +57,7 @@ Render callback
  * @param \WP_Block $block      Block instance.
  */
 function render_single_meta_block( array $attributes, string $content, \WP_Block $block ): string {
-	if ( ! isset( $block->context['postId'] ) ) {
+if ( ! ( isset( $block->context['postId'] ) || isset( $attributes['post_id'] ) ) || ! function_exists( 'get_field' ) ) {
 		return '';
 	}
 
@@ -74,29 +79,46 @@ Usage in e.g post-type-post.html
 ```js post-type-post.html
 <!-- wp:group {"align":"full","layout":{"inherit":false}} -->
 	<!-- wp:t2/post-link -->
-		<!-- wp:ia/single-meta /-->
+		<!-- wp:ia/single-meta {"my_meta_key":"data_hero"} /-->
 		<!-- wp:t2/post-title /-->
 	<!-- /wp:t2/post-link -->
 <!-- /wp:group -->
 ```
 
-## Known issue, tested on WP 6.1.1
+## Placeholder
 
-If the block don't have to be interactive you can use [@wordpress/server-side-render](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/).But there are some [issues/40714](https://github.com/WordPress/gutenberg/issues/40714).   
+By default during the backend block load there is displayed defaut spinner. 
+But we actually can make soome nicer preloader bone template.
+
+[WpDocs](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/#loadingresponseplaceholder)
+
+## Dev notoes.
+
+There are some [issues/40714](https://github.com/WordPress/gutenberg/issues/40714).
 In the Editor is uses async load the block and Gutenberg is passing post_Id of currently edited post.
 
-So if we want to use the `<ServerSideRender>` component as inner component of queried post e.g in T2 post card. The `post_Id` in the editor will show currently edited page, but on the frontend going to be correct.
+So if we want to use the `<ServerSideRender>` component as inner component of queried post e.g in `T2 post card`. The `post_Id` in the editor will point currently edited page, but on the frontend going to be correct.
 
-- So in above exampe you bug where the `post_id` is incorrect.
+There are two ways how we can solve this issue in case you would like to do something else if one method does work.
 
+### First method: override default query agrs.
+As above we can just override context args. [WpDocs](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/#urlqueryargs)
 
-#### Workaround.
+In this case we just oveerride default query args passed in the Gutenberg SSR component context. 
 
-Lucky there is workaround!
+```js block.js
+import { registerBlockType } from '@wordpress/blocks';
+import ServerSideRender from '@wordpress/server-side-render';
 
-Inject custom varible into attribute that come from correct context (here the context is correct).  
+registerBlockType('ia/single-meta', {
+	edit: ({coontext}) => {
+		return <ServerSideRender urlQueryArgs={ {post_id : context.postId} } block="ia/single-meta" />;
+	},
+});
+```
 
-**NOTE:** This example shows only post_id override, you may want also fix the post_type if that is important for you or other context elements. If you try to `console.log(context)` in the edit callback it contains correct context to see.
+### Second method: apply the `post_id` attribute to the block manually.
+
 ```js
 import { registerBlockType } from '@wordpress/blocks';
 import ServerSideRender from '@wordpress/server-side-render';
@@ -149,6 +171,7 @@ function render_single_meta_block( array $attributes, string $content, \WP_Block
 	if ( ! ( isset( $block->context['postId'] ) || isset( $attributes['post_id'] ) ) ) {
 		return '';
 	}
+
 	# IF the post  id come from our custom attribute just set it as the current post ID.
 	# On the frontend the context is correct and attributes post_id going to be empty.
 	$post_ID  = (int) $attributes['post_id'] ?: (int) $block->context['postId'];

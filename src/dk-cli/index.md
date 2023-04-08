@@ -1,9 +1,11 @@
 # Project Base CLI 
 
-### THIS IS ALPHA [[0.0.3](https://github.com/isuke01/dk-cli)]
+### THIS IS ALPHA [[0.0.4](https://github.com/isuke01/dk-cli)]
 
-Since this is in the testing/alpha stage there are issues to be expected.
+Since this is in the testing/alpha/proof of conceptthere are issues to be expected.
+
 Hace a look into [ISSUES](https://github.com/isuke01/dk-cli/issues) to get more informations.
+
 The TODO list is really long, script is missing most of the error handlers etc.
 
 ## How to start
