@@ -66,3 +66,35 @@ function the_t2_featured_content_card( string $type = 'post' ) :void  {
     echo get_t2_featured_content_card( $type );
 }
 ```
+
+## Default post template.
+
+I'm avare fact that we can use `template` in post type definition, this require to pass array, which can be really pain to create, this method is way faster to do, and to adjust if needed.
+
+Knowing above method we can also create easy templates for new posts.
+You just have to use hook `default_content` [Wp Docs](https://developer.wordpress.org/reference/hooks/default_content/) and return the block.
+
+In example below I'm reading template for post type if it exists and if not I'm using the default one.
+[Example template](https://github.com/DekodeInteraktiv/avinodegroup/blob/stage/packages/themes/avinodegroup/post-type-template/template-job_opening.html), [PHP Source](https://github.com/DekodeInteraktiv/avinodegroup/blob/stage/packages/themes/avinodegroup/lib/post-types.php#L245)
+
+```php
+/**
+ * Default post type template
+ *
+ * @param string   $content Wp content sttring.
+ * @param \WP_Post $post WP Post.
+ *
+ * @return string
+ */
+function default_content_post_type_gt_template( string $content, \WP_Post $post ) {
+	if ( $post ) {
+		$file = \get_stylesheet_directory() . '/post-type-template/template-'. $post->post_type . '.html';
+		if ( \file_exists( $file ) ) {
+			return \file_get_contents( $file );
+		}
+	}
+
+	return $content;
+}
+// Assign default content to the post types
+add_action( 'default_content', 'default_content_post_type_gt_template', 10, 2 );
