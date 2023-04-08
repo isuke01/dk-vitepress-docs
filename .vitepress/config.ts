@@ -56,7 +56,7 @@ export default {
             // This shows `/guide/index.md` page.
             { text: 'Server side component', link: '/general/guides/server-side-render-component' },
             { text: 'Use blocks as template part', link: '/general/guides/use-blocks-as-template-parts' },
-            { text: 'Extend core block', link: '/general/guides/extend-wp-paragraph' },
+            { text: 'Extend core block', link: '/general/guides/extend-gutenberg-block' },
             { text: 'WP CLI Helpers', link: '/general/guides/wp-cli-helpers' },
             { text: 'PHP switch', link: '/general/guides/php-switch-mac' },
           ]
