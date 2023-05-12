@@ -30,7 +30,7 @@ export default {
       copyright: `Copyright © 2022-${new Date().getFullYear()}`
     },
     nav: [
-      { text: 'DK CLI', link: '/dk-cli/' },
+      //{ text: 'DK CLI', link: '/dk-cli/' },
       { text: 'Genral', link: '/general/' },
       { text: 'T2', link: '/t2/getting-started' },
       { text: 'T2.teft.io', link: 'https://t2.teft.io', target: '_blank' },
