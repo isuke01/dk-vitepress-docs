@@ -7,15 +7,24 @@ Wp cli repalce db strings command
 <script setup>
 
 import { ref, computed } from 'vue'
+// Replace
 const stringToReplace = ref('https://old-domain.com')
 const newString = ref('http://new-domain.com')
 const isMultisite = ref(true)
 const networkOpt = computed(() => isMultisite.value ? ` --network` : '');
 
+//POT
 const textDomain = ref('textdomain')
 const themeDirName = ref('dekode')
 const textDomainUseThemeDir = ref(false)
 const textDomainLocation = computed(() => textDomainUseThemeDir.value ? `themes/${themeDirName.value}/` : ``);
+
+// WP user
+const userName = ref('dekode')
+const userDisplayName = ref('dekode')
+const userEmail = ref('dekode@wpengine.local')
+const userPass = ref('dekode')
+const userRole = ref('administrator')
 
 
 </script>
@@ -42,6 +51,44 @@ Copy CLI command to replace url for your DB strigns.
 wp search-replace "{{stringToReplace}}" "{{newString}}" --recurse-objects --skip-columns=guid{{networkOpt}}
 ```
 
+### Setup user:
+<div class="input-wrapp">
+	<label for="user-to-add">User name (no spaces, no comma etc): </label>
+	<input id="user-to-add" type="text" v-model="userName" />
+</div>
+
+<div class="input-wrapp">
+	<label for="user-to-dn">User display name: </label>
+	<input id="user-to-dn" type="text" v-model="userDisplayName" />
+</div>
+
+<div class="input-wrapp">
+	<label for="new-pass">User password: </label>
+	<input id="new-pass" type="text" v-model="userPass" />
+</div>
+
+
+<div class="input-wrapp">
+	<label for="new-email">User email: </label>
+	<input id="new-email" type="text" v-model="userEmail" />
+</div>
+
+<div class="input-wrapp">
+	<label for="use-network-role">User role: </label>
+	<input id="use-network-role" type="text" v-model="userRole" />
+</div>
+
+
+### Cli command:
+Copy CLI command to add user to your page.
+``` bash-vue
+wp user create {{userName}} {{userEmail}} --role={{userRole}} --user_pass={{userPass}} --display_name="{{userDisplayName}}"
+```
+
+If this is multisite, you can run this command to make user super-admin
+``` bash-vue
+wp super-admin add {{userName}}
+```
 
 ## CLI Generate translations file
 
