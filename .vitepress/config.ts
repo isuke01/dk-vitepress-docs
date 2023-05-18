@@ -85,7 +85,7 @@ export default {
             // This shows `/guide/index.md` page.
             // { text: 'Accordion', link: '/t2/blocks/accordion' },
             // { text: 'Byline', link: '/t2/blocks/byline' },
-            // { text: 'Factbox', link: '/t2/blocks/factbox' },
+            { text: 'T2 featured image', link: '/t2/blocks/t2-featured-image' },
             { text: 'Link list', link: '/t2/blocks/link-list' },
             { text: 'Featured content layout', link: '/t2/blocks/featured-content-layout' },
           ]
