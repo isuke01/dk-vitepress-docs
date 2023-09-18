@@ -22,8 +22,6 @@ Here is example `PHP` function that includes the the code and returns the code.
 ```php
 /**
  * Load template file for the rander related.
- * You may want to add the wrapper container with t2-featured-content classes:
- * <div class="t2-featured-content-layout alignwide wp-block-t2-featured-content-layout" ?>...
  *
  * @param string $type type of post.
  * @return string
@@ -45,7 +43,7 @@ function get_t2_featured_content_card( string $type = 'post' ) :string  {
 }
 ```
 
-Here we are including the file from theme, templates for the T2 featured content. But you can use any place.  
+Here we are including the file from theme, templates for the T2 featured content. But you can use any place.
 
 The fallback code is example of usage just plain HTML.
 
@@ -54,17 +52,45 @@ The block used in the post loop will automatically recive context informations l
 
 #### Extra
 
-Helper auto output function.
+The above function returns content from template file, which does not contain full `T2` markup.
+Here is the updated one:
+
 ```php
 /**
- * Helper function to auto output the get_t2_featured_content_card content.
+ * Load template file for the rander related.
+ * You may want to add the wrapper container with t2-featured-content classes:
+ * <div class="t2-featured-content-layout alignwide wp-block-t2-featured-content-layout" ?>...
  *
  * @param string $type type of post.
- * @return void
+ * @return string
  */
-function the_t2_featured_content_card( string $type = 'post' ) :void  {
-    echo get_t2_featured_content_card( $type );
+function get_t2_featured_content_card( string $type = 'post' ) :string  {
+	if ( ! \function_exists( 'T2\Blocks\FeaturedContent\get_featured_content_template' ) ) {
+			\ob_start();
+			// The fallback code better render something than nothing.
+		?>
+				<a class="archive-item fallback-block" href="<?php the_permalink(); ?>">
+					<h2 class="post-title"><?php the_title(); ?> </h2>
+				<a>
+		<?php
+			return \ob_get_clean();
+	}
+
+	$attributes = [
+		'postId'   => \get_the_ID(),
+		'postType' => $type,
+		'layout'   => 'card',
+	];
+
+	$wrapper_attributes = \get_block_wrapper_attributes( [
+		'class' => 't2-featured-single-post ' . get_post_class( $attributes['postId'] ),
+	] );
+	
+	$content = \do_blocks( get_featured_content_template( $attributes ) );
+
+	return sprintf( '<div %s>%s</div>', $wrapper_attributes, $content );
 }
+
 ```
 
 ## Default post template.
