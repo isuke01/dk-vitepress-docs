@@ -53,9 +53,14 @@ The block used in the post loop will automatically recive context informations l
 #### Extra
 
 The above function returns content from template file, which does not contain full `T2` markup.
-Here is the updated one:
+Here is the updated one that uses T2 function to render block wrapper with classes:
 
 ```php
+use function T2\Blocks\FeaturedContent\{
+	get_featured_content_template,
+	get_post_class,
+};
+
 /**
  * Load template file for the rander related.
  * You may want to add the wrapper container with t2-featured-content classes:
