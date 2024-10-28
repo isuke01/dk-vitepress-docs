@@ -188,3 +188,13 @@ function render_single_meta_block( array $attributes, string $content, \WP_Block
 	return \ob_get_clean();
 }
 ```
+
+### How to avoid "Rendered as empty response"
+
+You can add simply
+```JS
+<ServerSideRender
+	...OtherProps
+	EmptyResponsePlaceholder={() => <></>}
+/>
+```
