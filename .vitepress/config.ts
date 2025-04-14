@@ -59,6 +59,7 @@ export default {
             { text: 'Extend core block', link: '/general/guides/extend-gutenberg-block' },
             { text: 'WP CLI Helpers', link: '/general/guides/wp-cli-helpers' },
             { text: 'PHP switch', link: '/general/guides/php-switch-mac' },
+            { text: 'SSL CER', link: '/general/guides/ssl-cer' },
           ]
         },
       ],
