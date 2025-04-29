@@ -64,15 +64,13 @@ export default {
         },
       ],
       '/t2/': [
-        // {
-        //   text: 'Guide',
-        //   items: [
-        //     // This shows `/guide/index.md` page.
-        //     { text: 'First block', link: '/t2/' },
-        //     { text: 'Extend block', link: '/t2/' }, // /guide/one.md
-        //     { text: 'Something else', link: '/t2/' } // /guide/two.md
-        //   ]
-        // },
+        {
+          text: 'Guide',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'T2 Media Queries', link: '/t2/guides/media-queries' },
+          ]
+        },
         {
           text: 'Helpers, hooks and filtes',
           items: [
@@ -87,8 +85,8 @@ export default {
             // { text: 'Accordion', link: '/t2/blocks/accordion' },
             // { text: 'Byline', link: '/t2/blocks/byline' },
             { text: 'T2 featured image', link: '/t2/blocks/t2-featured-image' },
-            { text: 'Link list', link: '/t2/blocks/link-list' },
-            { text: 'Featured content layout', link: '/t2/blocks/featured-content-layout' },
+            // { text: 'Link list', link: '/t2/blocks/link-list' },
+            // { text: 'Featured content layout', link: '/t2/blocks/featured-content-layout' },
           ]
         },
         // {
