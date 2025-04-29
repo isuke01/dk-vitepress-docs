@@ -69,6 +69,7 @@ export default {
           items: [
             // This shows `/guide/index.md` page.
             { text: 'T2 Media Queries', link: '/t2/guides/media-queries' },
+            { text: 'T2 Margins V3', link: '/t2/guides/t2-margins-v' },
           ]
         },
         {
