@@ -61,6 +61,7 @@ export default {
             { text: 'WP CLI Helpers', link: '/general/guides/wp-cli-helpers' },
             { text: 'PHP switch', link: '/general/guides/php-switch-mac' },
             { text: 'SSL CER', link: '/general/guides/ssl-cer' },
+            { text: 'JS Width/height var to body', link: '/general/guides/js-add-height-width-var' },
           ]
         },
       ],
