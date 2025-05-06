@@ -70,6 +70,8 @@ export default {
           text: 'T2',
           items: [
             { text: 'Use blocks as template part', link: '/guides/t2/use-blocks-as-template-parts' },
+            { text: 'T2 Media Queries', link: '/guides/t2/media-queries' },
+            { text: 'T2 Margins V3', link: '/guides/t2/t2-margins-v' },
           ]
         },
         {
@@ -90,14 +92,7 @@ export default {
         
       ],
       '/t2/': [
-        {
-          text: 'Guide',
-          items: [
-            // This shows `/guide/index.md` page.
-            { text: 'T2 Media Queries', link: '/t2/guides/media-queries' },
-            { text: 'T2 Margins V3', link: '/t2/guides/t2-margins-v' },
-          ]
-        },
+        { text: 'Guides/T2', link: '/guides/' },
         {
           text: 'Helpers, hooks and filtes',
           items: [

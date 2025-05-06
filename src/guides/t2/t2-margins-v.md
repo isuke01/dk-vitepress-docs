@@ -6,6 +6,9 @@ date: git Last Modified
 # T2 Margins v3
 If you're used old one and move to v3 You can remove the duplicate settings (`t2/custom-block-margin`) from theme.json
 
+[[toc]]
+
+
 ## Usefully links
 - [T2 Docs](https://t2.teft.io/extensions/custom-block-margin/)
 - [T2 Git margins](https://github.com/DekodeInteraktiv/T2/tree/main/packages/extension-library/src/custom-block-margin)

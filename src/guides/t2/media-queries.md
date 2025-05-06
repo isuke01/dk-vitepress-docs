@@ -7,6 +7,8 @@ date: git Last Modified
 This was based on the [Original PR](https://github.com/DekodeInteraktiv/T2/pull/4992)
 Gol was to match [most used breakpoints](https://github.com/WordPress/gutenberg/blob/d8545b29b5224207546d7b31dbd8502f804f439b/packages/base-styles/_breakpoints.scss#L5) in Gutenberg and WordPress.
 
+[[toc]]
+
 ### Since: T2 v8.8.0
 
 With 8.8.2 the file name in `postcss` config was updated, and this one will be used here.
