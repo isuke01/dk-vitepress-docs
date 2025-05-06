@@ -85,13 +85,6 @@ Usage in e.g post-type-post.html
 <!-- /wp:group -->
 ```
 
-## Placeholder
-
-By default during the backend block load there is displayed defaut spinner. 
-But we actually can make soome nicer preloader bone template.
-
-[WpDocs](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/#loadingresponseplaceholder)
-
 ## Dev notoes.
 
 There are some [issues/40714](https://github.com/WordPress/gutenberg/issues/40714).
@@ -197,4 +190,137 @@ You can add simply
 	...OtherProps
 	EmptyResponsePlaceholder={() => <></>}
 />
+```
+
+### SSR component preloader
+
+By default during the backend block load there is displayed defaut spinner. 
+But we actually can make some nicer preloader bone template.
+
+[WpDocs](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-server-side-render/#loadingresponseplaceholder)
+
+
+Example card prloader code
+
+#### Usage in the SSR 
+
+The usage in core component is simple as that. 
+```js
+<ServerSideRender
+	LoadingResponsePlaceholder={SkeletonPostCard}
+	block={'t2/featured-single-post'}
+	attributes = { {
+		postId: post.id,
+		postType: post.type,
+	} }
+/>
+```
+
+The `SkeletonPostCard` is a custom component that will be used as a preloader.
+Here is an exmample code.
+```js
+const SkeletonPostCard = () => {
+	return (
+		<div
+			className="skeleton-post-card"
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				gap: '12px',
+				padding: '16px',
+				border: '1px solid #ddd',
+				borderRadius: '8px',
+				background: '#fff',
+				maxWidth: '400px',
+			}}
+		>
+			<div
+				className="skeleton-thumbnail"
+				style={{
+					width: '100%',
+					height: '180px',
+					backgroundColor: '#e0e0e0',
+					borderRadius: '6px',
+					position: 'relative',
+					overflow: 'hidden',
+				}}
+			></div>
+
+			<div
+				className="skeleton-title"
+				style={{
+					height: '20px',
+					width: '70%',
+					backgroundColor: '#e0e0e0',
+					borderRadius: '4px',
+					position: 'relative',
+					overflow: 'hidden',
+				}}
+			></div>
+
+			<div
+				className="skeleton-excerpt"
+				style={{
+					height: '14px',
+					width: '90%',
+					backgroundColor: '#e0e0e0',
+					borderRadius: '4px',
+					position: 'relative',
+					overflow: 'hidden',
+				}}
+			></div>
+
+			<div
+				className="skeleton-meta"
+				style={{
+					display: 'flex',
+					gap: '12px',
+					marginTop: '8px',
+				}}
+			>
+				<div
+					style={{
+						height: '12px',
+						width: '60px',
+						backgroundColor: '#e0e0e0',
+						borderRadius: '4px',
+						position: 'relative',
+						overflow: 'hidden',
+					}}
+				></div>
+				<div
+					style={{
+						height: '12px',
+						width: '80px',
+						backgroundColor: '#e0e0e0',
+						borderRadius: '4px',
+						position: 'relative',
+						overflow: 'hidden',
+					}}
+				></div>
+			</div>
+
+			<style>
+				{`
+					.skeleton-post-card div {
+						animation: skeleton-pulse 1.5s ease-in-out infinite;
+						background-image: linear-gradient(90deg, #e0e0e0 0px, #f0f0f0 40%, #e0e0e0 80%);
+						background-size: 200% 100%;
+					}
+
+					@keyframes skeleton-pulse {
+						0% {
+							background-position: 0% 0%;
+						}
+						100% {
+							background-position: -200% 0%;
+						}
+					}
+				`}
+			</style>
+		</div>
+	);
+};
+
+export default SkeletonPostCard;
 ```

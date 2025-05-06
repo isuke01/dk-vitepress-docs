@@ -31,7 +31,7 @@ export default {
     },
     nav: [
       //{ text: 'DK CLI', link: '/dk-cli/' },
-      { text: 'Genral', link: '/general/' },
+      { text: 'Guides', link: '/guides/' },
       { text: 'T2', link: '/t2/getting-started' },
       { text: 'T2.teft.io', link: 'https://t2.teft.io', target: '_blank' },
       { text: 'DK Library', link: 'https://library.dekode.no', target: '_blank' },
@@ -49,21 +49,45 @@ export default {
     sidebar: {
       // This sidebar gets displayed when user is
       // under `guide` directory.
-      '/general/': [
+      '/guides/': [
         {
-          text: 'Guides && help',
+          text: 'JS',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Server side component', link: '/general/guides/server-side-render-component' },
-            { text: 'Body clase based on blocks', link: '/general/guides/adjust-body-class-base-on-blocks' },
-            { text: 'Use blocks as template part', link: '/general/guides/use-blocks-as-template-parts' },
-            { text: 'Extend core block', link: '/general/guides/extend-gutenberg-block' },
-            { text: 'WP CLI Helpers', link: '/general/guides/wp-cli-helpers' },
-            { text: 'PHP switch', link: '/general/guides/php-switch-mac' },
-            { text: 'SSL CER', link: '/general/guides/ssl-cer' },
-            { text: 'JS Width/height var to body', link: '/general/guides/js-add-height-width-var' },
+            { text: 'Body clase based on blocks', link: '/guides/js/adjust-body-class-base-on-blocks' },
+            { text: 'JS Width/height var to body', link: '/guides/js/add-height-width-var' },
           ]
         },
+        {
+          text: 'Gutenberg',
+          items: [
+            { text: 'Extend core block', link: '/guides/gutenberg/extend-gutenberg-block' },
+            { text: 'Server side component', link: '/guides/gutenberg/server-side-render-component' },
+            { text: 'Select block settings', link: '/guides/gutenberg/select-block-types-data' },
+          ]
+        },
+        {
+          text: 'T2',
+          items: [
+            { text: 'Use blocks as template part', link: '/guides/t2/use-blocks-as-template-parts' },
+          ]
+        },
+        {
+          text: 'Wordpress',
+          items: [
+            { text: 'Modify wp_remote_post', link: '/guides/wordpress/modify-request-in-wp-remote-post' },
+          ]
+        },
+        {
+          text: 'Other',
+          items: [
+            { text: 'WP CLI Helpers', link: '/guides/other/wp-cli-helpers' },
+            { text: 'PHP switch', link: '/guides/other/php-switch-mac' },
+            { text: 'SSL CER', link: '/guides/other/ssl-cer' },
+
+          ]
+        },
+        
       ],
       '/t2/': [
         {
