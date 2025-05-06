@@ -1,5 +1,5 @@
 # WP CLI Helpers
-
+[[toc]]
 ## CLI replace DB strings
 
 Wp cli repalce db strings command

@@ -14,6 +14,9 @@ head:
 This example covers how to extend the WP core parahraph block. 
 But this can apply also to not only Core blocks in some way.
 
+[[toc]]
+
+
 ## Extend the Inspector controll.
 
 #### Full code: [Gist](https://gist.github.com/isuke01/ebaebb3c5fc5c4804fdad3982973ba50)

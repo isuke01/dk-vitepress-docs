@@ -1,5 +1,8 @@
 # Block Types Data
 
+[[toc]]
+
+
 Those methods allows you to get valuable information about the block and it's variations,types etc and so on.
 
 Full docs can be found [here](https://developer.wordpress.org/block-editor/reference-guides/data/data-core-blocks/).

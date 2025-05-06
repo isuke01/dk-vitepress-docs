@@ -1,5 +1,5 @@
 # Simple guide to adjust body class based on blocks
-
+[[toc]]
 
 ## Example how to first add block name to body class
 

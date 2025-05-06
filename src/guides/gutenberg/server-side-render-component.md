@@ -2,7 +2,9 @@
 
 If we have block that is not interactive with user, we can just use php rendered bloock.
 
+[[toc]]
 
+## Example: Single meta block
 Simple [example JS](https://github.com/DekodeInteraktiv/innovativeanskaffelser/blob/e02fecb0e1facd2a494043a9ce0dda53b5972631/packages/themes/innovative-anskaffelser/src/js/blocks/block-partials.js#L11)
 
 NOTE: In this case I'm using `urlQueryArgs` to pass the post id to the block because block going to be used inside WP Loop.

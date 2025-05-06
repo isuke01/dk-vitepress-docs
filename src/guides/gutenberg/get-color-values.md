@@ -1,5 +1,7 @@
 # Get color values from block's Background and Gradient
 
+[[toc]]
+
 When you want to get color value from block's background or gradient, this is a bit tricky as it returns a slug and not a color value. The slug is used to get the color value from the global settings.
 
 And if you want to make sure to support theme.json, core styles, and custom styles, it gets a bit more complicated.

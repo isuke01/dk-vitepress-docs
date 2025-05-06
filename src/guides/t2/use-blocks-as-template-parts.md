@@ -3,6 +3,8 @@
 Every gutenberg block can be read and used as tempalte part in the wordpress.  
 You can make simply html out of blocks and use those as part of the template.
 
+[[toc]]
+
 ##### Example html file
 
 `post-type-post.html`

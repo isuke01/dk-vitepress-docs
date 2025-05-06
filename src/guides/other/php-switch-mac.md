@@ -1,5 +1,5 @@
 # PHP switch for MAC os
-
+[[toc]]
 
 [Guide](https://stitcher.io/blog/php-8-upgrade-mac)
 

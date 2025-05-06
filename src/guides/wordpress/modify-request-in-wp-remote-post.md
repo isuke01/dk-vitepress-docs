@@ -1,6 +1,8 @@
 # Modify request sent in wp_remote_post
 This method allows to modify the request sent in `wp_remote_post` function. Could be usefully when dealing with third party Plugin you can't modify the request directly.
 
+[[toc]]
+
 ## Usage
 
 Based on WP Core request we can use the `pre_http_request` filter bail the current request and replace it with a new one. [Core Code](https://github.com/WordPress/wordpress-develop/blob/1651947e3dc6ba14e227cf5f2045df6c16908045/src/wp-includes/class-wp-http.php#L277-L277)

@@ -1,5 +1,5 @@
 # Helper function to add height and width variables to the body
-
+[[toc]]
 
 ## Basic JS code:
 
