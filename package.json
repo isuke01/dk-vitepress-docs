@@ -17,12 +17,10 @@
   "license": "ISC",
   "devDependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "flexsearch": "^0.7.31",
     "markdown-it": "^13.0.1",
     "sass": "^1.56.1",
     "vite-plugin-inspect": "^0.5.0",
     "vitepress": "^1.6.0",
-    "vitepress-plugin-search": "^1.0.4-alpha.22",
     "vue": "^3.2.37"
   }
 }
