@@ -64,6 +64,7 @@ export default {
             { text: 'Extend core block', link: '/guides/gutenberg/extend-gutenberg-block' },
             { text: 'Server side component', link: '/guides/gutenberg/server-side-render-component' },
             { text: 'Select block settings', link: '/guides/gutenberg/select-block-types-data' },
+            { text: 'Component: BaseControl', link: '/guides/gutenberg/components-base-control' },
           ]
         },
         {
