@@ -2,9 +2,9 @@
 The T2 [docs](https://t2.teft.io/blocks/featured-content/)
 This one is pretty well made so no need for re-writing everything.
 
-**NOTE**: It may be usefull for you to look also into [Guides/SSR components](/general/guides/server-side-render-component) for extending templates.
+**NOTE**: It may be usefull for you to look also into [Guides/SSR components](/guides/gutenberg/server-side-render-component) for extending templates.
 
-**NOTE**: Those blocks can be used as part of templat in the loop e.g on archives. [Guides/Use blocks as template part](/general/guides/use-blocks-as-template-parts).
+**NOTE**: Those blocks can be used as part of templat in the loop e.g on archives. [Guides/Use blocks as template part](/guides/t2/use-blocks-as-template-parts).
 
 ## Add custom post types for the picker.
 

@@ -4,11 +4,12 @@ layout: home
 hero:
   name: Dekode Interaktiv
   text: Because good code starts with good documentation.
-  tagline: Welcome to the developer documentation for T2. Here you'll find introductions to all features, resources, guides, and reference documentation for APIs.
+  tagline: 
+    A collection of tools and resources to help you build better web applications.
   actions:
     - theme: brand
       text: Get Started
-      link: /docs/
+      link: /guides/
     - theme: alt
       text: View on GitHub
       link: https://github.com/dekodeInteraktiv/
