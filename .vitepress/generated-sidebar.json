@@ -1,0 +1,222 @@
+{
+  "components": [
+    {
+      "text": "Appenders",
+      "link": "/dk-library/components/appenders/",
+      "items": [
+        {
+          "text": "AppenderButton",
+          "link": "/dk-library/components/appenders/appender-button/"
+        }
+      ]
+    },
+    {
+      "text": "The Controlers",
+      "link": "/dk-library/components/controls/",
+      "items": [
+        {
+          "text": "Image Control",
+          "link": "/dk-library/components/controls/image-control/"
+        },
+        {
+          "text": "LinkControl",
+          "link": "/dk-library/components/controls/link-popup/"
+        },
+        {
+          "text": "MediaControl Component",
+          "link": "/dk-library/components/controls/media-control/"
+        },
+        {
+          "text": "LibTaxonomyTermControl",
+          "link": "/dk-library/components/controls/taxonomy-term/"
+        }
+      ]
+    },
+    {
+      "text": "Meta components",
+      "link": "/dk-library/components/meta/",
+      "items": [
+        {
+          "text": "Meta Checkbox Control: `LibMetaCheckboxControl`",
+          "link": "/dk-library/components/meta/checkbox-control/"
+        },
+        {
+          "text": "LibMetaLinkControl",
+          "link": "/dk-library/components/meta/link-select-control/"
+        },
+        {
+          "text": "Meta Checkbox Control: `LibMetaNumberControl`",
+          "link": "/dk-library/components/meta/number-control/"
+        },
+        {
+          "text": "Meta Checkbox Control: `LibMetaSelectControl`",
+          "link": "/dk-library/components/meta/select-control/"
+        },
+        {
+          "text": "Meta Checkbox Control: `LibMetaTaxonomyTag`",
+          "link": "/dk-library/components/meta/taxonomy-tag-control/"
+        },
+        {
+          "text": "Meta Checkbox Control: `LibMetaTextareaControl`",
+          "link": "/dk-library/components/meta/textarea-control/"
+        },
+        {
+          "text": "Meta Toggle Control: `LibMetaToggleControl`",
+          "link": "/dk-library/components/meta/toggle-control/"
+        }
+      ]
+    }
+  ],
+  "library": [
+    {
+      "text": "Library modules",
+      "items": [
+        {
+          "text": "DO NOT USE THIS IS NOT FINISHED YET",
+          "link": "/dk-library/library/basic-carousel/",
+          "items": []
+        },
+        {
+          "text": "Cache helper",
+          "link": "/dk-library/library/cache-helper/",
+          "items": []
+        },
+        {
+          "text": "Card Template",
+          "link": "/dk-library/library/card-template/",
+          "items": []
+        },
+        {
+          "text": "Carousel Wrapper",
+          "link": "/dk-library/library/carousel-wrapper/",
+          "items": []
+        },
+        {
+          "text": "Colored card",
+          "link": "/dk-library/library/color-card/",
+          "items": []
+        },
+        {
+          "text": "Dekode QA",
+          "link": "/dk-library/library/dekode-qa/",
+          "items": []
+        },
+        {
+          "text": "Dekode SatisPress",
+          "link": "/dk-library/library/dekode-satispress/",
+          "items": []
+        },
+        {
+          "text": "Dinutvei Help",
+          "link": "/dk-library/library/dinutvei-help/",
+          "items": []
+        },
+        {
+          "text": "Dekode Library - Example",
+          "link": "/dk-library/library/example/",
+          "items": []
+        },
+        {
+          "text": "Featured Cards Loop",
+          "link": "/dk-library/library/featured-cards-loop/",
+          "items": []
+        },
+        {
+          "text": "Featured Link",
+          "link": "/dk-library/library/featured-link/",
+          "items": []
+        },
+        {
+          "text": "Yet another hero block.",
+          "link": "/dk-library/library/hero-lx/",
+          "items": []
+        },
+        {
+          "text": "HubSpot Form",
+          "link": "/dk-library/library/hubspot-form/",
+          "items": []
+        },
+        {
+          "text": "Lazy Load blocks in editor",
+          "link": "/dk-library/library/lazy-load-editor/",
+          "items": []
+        },
+        {
+          "text": "Library.json",
+          "link": "/dk-library/library/library-json/",
+          "items": []
+        },
+        {
+          "text": "Modal Wrapper",
+          "link": "/dk-library/library/modal-wrapper/",
+          "items": []
+        },
+        {
+          "text": "NTB integration",
+          "link": "/dk-library/library/ntb-integration/",
+          "items": []
+        },
+        {
+          "text": "Organizations Map",
+          "link": "/dk-library/library/organizations-map/",
+          "items": []
+        },
+        {
+          "text": "Page Language (Meta Option)",
+          "link": "/dk-library/library/page-language/",
+          "items": []
+        },
+        {
+          "text": "Post languages block",
+          "link": "/dk-library/library/post-languages/",
+          "items": []
+        },
+        {
+          "text": "Post type scroll",
+          "link": "/dk-library/library/post-type-scroll/",
+          "items": []
+        },
+        {
+          "text": "Query Load More",
+          "link": "/dk-library/library/query-load-more/",
+          "items": []
+        },
+        {
+          "text": "section with heading block",
+          "link": "/dk-library/library/section-with-heading/",
+          "items": []
+        },
+        {
+          "text": "Bugfix for selection bug introduced by chromium",
+          "link": "/dk-library/library/selection-bugfix/",
+          "items": []
+        },
+        {
+          "text": "T2 Newsletter reCAPTCHA Addon",
+          "link": "/dk-library/library/t2-newsletter-recaptcha-addon/",
+          "items": []
+        },
+        {
+          "text": "Tabs Block",
+          "link": "/dk-library/library/tabs/",
+          "items": [
+            {
+              "text": "Tabs Block",
+              "link": "/dk-library/library/tabs/src"
+            }
+          ]
+        },
+        {
+          "text": "User Manager",
+          "link": "/dk-library/library/user-manager/",
+          "items": []
+        },
+        {
+          "text": "Video player",
+          "link": "/dk-library/library/video-player/",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

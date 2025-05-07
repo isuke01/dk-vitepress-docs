@@ -1,3 +1,5 @@
+import generatedSidebar from './generated-sidebar.json';
+
 export default {
   // base: '/test/',
   lang: 'en-US',
@@ -32,28 +34,26 @@ export default {
     nav: [
       //{ text: 'DK CLI', link: '/dk-cli/' },
       { text: 'Guides', link: '/guides/' },
+      {
+        text: 'Dekode Library',
+        items: [
+          { text: 'Components', link: '/dk-library/components/' },
+          { text: 'Library', link: '/dk-library/library/' },
+        ],
+      },
       { text: 'T2', link: '/t2/getting-started' },
       { text: 'T2.teft.io', link: 'https://t2.teft.io', target: '_blank' },
-      { text: 'DK Library', link: 'https://library.dekode.no', target: '_blank' },
-      // {
-      //   text: 'Dropdown Menu',
-      //   items: [
-      //     { text: 'Item A', link: '/item-1' },
-      //     { text: 'Item B', link: '/item-2' },
-      //     { text: 'Item C', link: '/item-3' },
-      //   ],
-      // },
+      { text: '(old) DK Library', link: 'https://library.dekode.no', target: '_blank' },
 
       // ...
     ],
     sidebar: {
-      // This sidebar gets displayed when user is
-      // under `guide` directory.
+      '/dk-library/components/': generatedSidebar['components'],
+      '/dk-library/library/': generatedSidebar['library'],
       '/guides/': [
         {
           text: 'JS',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Body clase based on blocks', link: '/guides/js/adjust-body-class-base-on-blocks' },
             { text: 'JS Width/height var to body', link: '/guides/js/add-height-width-var' },
           ]
@@ -104,23 +104,9 @@ export default {
         {
           text: 'Blocks',
           items: [
-            // This shows `/guide/index.md` page.
-            // { text: 'Accordion', link: '/t2/blocks/accordion' },
-            // { text: 'Byline', link: '/t2/blocks/byline' },
             { text: 'T2 featured image', link: '/t2/blocks/t2-featured-image' },
-            // { text: 'Link list', link: '/t2/blocks/link-list' },
-            // { text: 'Featured content layout', link: '/t2/blocks/featured-content-layout' },
           ]
         },
-        // {
-        //   text: 'Extensions',
-        //   items: [
-        //     // This shows `/guide/index.md` page.
-        //     { text: 'Index', link: '/guide/' }, // /guide/index.md
-        //     { text: 'One', link: '/guide/one' }, // /guide/one.md
-        //     { text: 'Two', link: '/guide/two' } // /guide/two.md
-        //   ]
-        // }
       ],
     }
   }
