@@ -1,4 +1,4 @@
-# DO NOT USE THIS IS NOT FINISHED YET 
+# Basic carousel block
 
 ![Screenshot](./screenshot.png)
 I had no time to finish this block, but I will finish it in the future.
