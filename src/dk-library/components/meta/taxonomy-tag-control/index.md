@@ -1,4 +1,4 @@
-# Meta Checkbox Control: `LibMetaTaxonomyTag`
+# Meta Checkbox Control
 
 The `LibMetaTaxonomyTag` component is a wrapper around the `LibMetaCheckboxControl` component. It is used to display a list of checkboxes for a taxonomy.
 The coomponent uses simply Gutenberg `FormTokenField` for multiple and `SelectControl` for single term mode.

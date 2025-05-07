@@ -1,4 +1,4 @@
-# Meta Checkbox Control: `LibMetaCheckboxControl`
+# Meta Checkbox Control
 
 The component set on/off the meta.
 This is basic Wrapper for WP `CheckboxControl` component.

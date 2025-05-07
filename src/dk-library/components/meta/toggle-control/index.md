@@ -1,4 +1,4 @@
-# Meta Toggle Control: `LibMetaToggleControl`
+# Meta Toggle Control
 
 The component set on/off the meta.
 This is basic Wrapper for WP `ToggleControl` component.

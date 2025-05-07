@@ -1,4 +1,4 @@
-# Meta Checkbox Control: `LibMetaSelectControl`
+# Meta Checkbox Control
 
 [[toc]]
 ## Params

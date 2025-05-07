@@ -37,7 +37,7 @@
       "link": "/dk-library/components/meta/",
       "items": [
         {
-          "text": "Meta Checkbox Control: `LibMetaCheckboxControl`",
+          "text": "Meta Checkbox Control",
           "link": "/dk-library/components/meta/checkbox-control/"
         },
         {
@@ -45,23 +45,31 @@
           "link": "/dk-library/components/meta/link-select-control/"
         },
         {
-          "text": "Meta Checkbox Control: `LibMetaNumberControl`",
+          "text": "Meta Checkbox Control",
           "link": "/dk-library/components/meta/number-control/"
         },
         {
-          "text": "Meta Checkbox Control: `LibMetaSelectControl`",
+          "text": "Meta Radio Control",
+          "link": "/dk-library/components/meta/radio-control/"
+        },
+        {
+          "text": "Meta Checkbox Control",
           "link": "/dk-library/components/meta/select-control/"
         },
         {
-          "text": "Meta Checkbox Control: `LibMetaTaxonomyTag`",
+          "text": "Meta Checkbox Control",
           "link": "/dk-library/components/meta/taxonomy-tag-control/"
         },
         {
-          "text": "Meta Checkbox Control: `LibMetaTextareaControl`",
+          "text": "Text control",
+          "link": "/dk-library/components/meta/text-control/"
+        },
+        {
+          "text": "Meta Checkbox Control",
           "link": "/dk-library/components/meta/textarea-control/"
         },
         {
-          "text": "Meta Toggle Control: `LibMetaToggleControl`",
+          "text": "Meta Toggle Control",
           "link": "/dk-library/components/meta/toggle-control/"
         }
       ]
@@ -201,8 +209,8 @@
           "link": "/dk-library/library/tabs/",
           "items": [
             {
-              "text": "Tabs Block",
-              "link": "/dk-library/library/tabs/src"
+              "text": "Childs",
+              "link": "/dk-library/library/tabs/src/"
             }
           ]
         },
