@@ -3,7 +3,9 @@
 */
 
 :root {
+	--dk-green-light: #4dd599;
 	--dk-green: #30b468;
+	--dk-green-darker: #1d8a4a;
 	--dk-grey: #171d26;
 	--dk-lang-doc-color: var(--dk-green);
 
@@ -15,6 +17,14 @@
 	--vp-code-block-bg: var(--vp-sidebar-bg-color);
 	--vp-code-block-divider-color: var(--vp-c-divider);
 	--vp-code-line-number-color: var(--vp-c-text-3);
+
+	--vp-button-brand-bg: var(--dk-green);
+	--vp-button-brand-border: var(--dk-green-darker);
+	--vp-button-brand-hover-bg: var(--dk-green-darker);
+
+	--vp-c-brand-1: var(--dk-green);
+	--vp-c-brand-2: var(--dk-green);
+	--vp-c-brand-3: var(--dk-green-darker);
 }
 
 .dark {
@@ -94,7 +104,7 @@
 	}
 }
 
-.name .clip {
+.heading .name.clip {
 	font-weight: 900;
 	font-size: 76px;
 	background: -webkit-linear-gradient(315deg,var(--dk-green) 40%,#64b4ff);
