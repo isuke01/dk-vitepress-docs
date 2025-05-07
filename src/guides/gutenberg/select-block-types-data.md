@@ -62,4 +62,25 @@ const ExampleComponent = () => {
 };
 ```
 
+Or use it with custom button block to render all the styles of the button block.
+
+(example from RoomSketcher)
+```js
+<div className={`wp-block-button is-style-${buttonStyle}`}>
+    <RichText
+        tagName="span"
+        className="wp-block-button__link"
+        placeholder={__(
+            'Button label',
+            'rs-hubspot-popup-button',
+        )}
+        value={buttonText}
+        onChange={(value) =>
+            setAttributes({ buttonText: value })
+        }
+        allowedFormats={[]}
+    />
+</div>
+```
+
 NOTE: WP does not include core styles of buttons to the editor so keep it in mind during genarating styles.
