@@ -24,6 +24,9 @@ export default {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/isuke01/dk-vitepress-docs' },
     ],
+    search: {
+		  provider: 'local'
+		},
     footer: {
       license: {
         text: 'MIT License',
