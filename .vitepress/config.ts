@@ -90,7 +90,8 @@ export default {
             { text: 'WP CLI Helpers', link: '/guides/other/wp-cli-helpers' },
             { text: 'PHP switch', link: '/guides/other/php-switch-mac' },
             { text: 'SSL CER', link: '/guides/other/ssl-cer' },
-
+            { text: 'Slow LocalWP (9.2 +) Macos', link: '/guides/other/slow-localwp-macos' },
+            { text: 'Fail WP CLI `mysql_native_password`', link: '/guides/other/wp-cli-mysql-pass-issue' },
           ]
         },
         
