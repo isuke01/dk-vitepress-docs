@@ -1,6 +1,6 @@
 # Dekode library components
 
-There is known gotcha, when you import component that uses e.g @worpdress/icons and you'r block does not have it as a dependency, you will get an error during build. To avoid this, you need to add this dependency to block's packades.
+If you'r component uses extra dependencies, it should be included in the `package.json` file of the components directory. This way, the dependencies will be available when the component is used in a block.
 
 [[toc]]
 ## Webpack auto import

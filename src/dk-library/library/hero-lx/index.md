@@ -13,7 +13,7 @@ Orignally developed for Litex design.
 
 ## 💡 Install via Composer:
 ```bash
-composer require dekode-library/hero-lx:1.2.1
+composer require dekode-library/hero-lx:1.3.1
 ```
 
 ## Filters

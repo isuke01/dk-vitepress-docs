@@ -80,7 +80,7 @@
       "text": "Library modules",
       "items": [
         {
-          "text": "Basic carousel",
+          "text": "Basic carousel block",
           "link": "/dk-library/library/basic-carousel/",
           "items": []
         },
@@ -207,12 +207,7 @@
         {
           "text": "Tabs Block",
           "link": "/dk-library/library/tabs/",
-          "items": [
-            {
-              "text": "Childs",
-              "link": "/dk-library/library/tabs/src/"
-            }
-          ]
+          "items": []
         },
         {
           "text": "User Manager",

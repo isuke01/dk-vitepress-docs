@@ -1,17 +1,20 @@
 # Basic carousel block
 
 ![Screenshot](./screenshot.png)
-
-[[toc]]
-
-## DO NOT USE THIS BLOCK YET.
 I had no time to finish this block, but I will finish it in the future.
 But I wanted to keep the code here so I can come back to it later.
+
+[[toc]]
 
 ## 💡 Install via Composer:
 ```bash
 composer require dekode-library/basic-carousel:0.0.1
 ```
+
+## DO NOT USE THIS BLOCK YET.
+I had no time to finish this block, but I will finish it in the future.
+But I wanted to keep the code here so I can come back to it later.
+
 
 ## Simple Slider block.
 - The block allows user to make simpel carousel
