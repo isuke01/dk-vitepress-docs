@@ -63,7 +63,7 @@ function enhanceMarkdownFile(mdPath, hasScreenshot, itemKey = null, isLibrary = 
           '## 💡 Install via Composer:',
           '```bash',
           `composer require dekode-library/${itemKey}:${version}`,
-          '```',
+          '```', 
           ''
         ];
         console.log(`🎼 Prepared composer require for ${itemKey}`);
