@@ -1,6 +1,5 @@
 # Dekode library components
-
-If you'r component uses extra dependencies, it should be included in the `package.json` file of the components directory. This way, the dependencies will be available when the component is used in a block.
+To work with this locally, you should run npm install from components directory. As the blocks may fail to load if the dependencies are not installed.
 
 [[toc]]
 ## Webpack auto import

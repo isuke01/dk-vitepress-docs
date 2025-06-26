@@ -17,7 +17,7 @@ Note: This plugin was made when working on this solution for NKVTS - Din utvei -
 
 ## 💡 Install via Composer:
 ```bash
-composer require dekode-library/dekode-qa:1.1.0
+composer require dekode-library/dekode-qa:1.1.2
 ```
 
 ## Blocks
