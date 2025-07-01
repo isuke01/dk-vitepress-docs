@@ -10,7 +10,7 @@ By default, the block block does not have any styling.
 
 ## 💡 Install via Composer:
 ```bash
-composer require dekode-library/card-template:2.0.1
+composer require dekode-library/card-template:2.0.2
 ```
 
 ## Usage
