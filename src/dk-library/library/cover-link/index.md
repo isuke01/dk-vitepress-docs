@@ -10,6 +10,8 @@ Simple cover block with support:
 - Logo image
 - Template for inner blocks
 - Per Variation settings
+- Allows resize logo width
+- Content position control
 
 [[toc]]
 
@@ -33,6 +35,7 @@ Settings are nested inside `settings`objects.
 - `allowLogo` - Whether the block has a logo.
 - `hasFocalPoint` - Whether the block has a focal point.
 - `hasOverlay` - Whether the block has an overlay.
+- `allowContentPosition` - Whether the block allows content position control.
 
 Each variation can have its own settings, which will override the default settings or inherit from default.
 
@@ -63,3 +66,10 @@ Example settings for the block in `theme.json` and auto registered variations fo
 		}
 	},
 ```
+
+### Potential improvements
+- Add support for background video.
+- Add support for background gradient.
+- Add height resize control.
+- Add height resize control for mobile
+- Add BG for mobile

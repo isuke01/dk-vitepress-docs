@@ -7,7 +7,7 @@ Overrides the query loop block to work with T2 while also removing clutter. Supp
 
 ## 💡 Install via Composer:
 ```bash
-composer require dekode-library/featured-cards-loop:2.0.0
+composer require dekode-library/featured-cards-loop:2.0.1
 ```
 
 ## Customizing the block

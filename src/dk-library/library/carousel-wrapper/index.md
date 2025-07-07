@@ -11,7 +11,7 @@ Note: This is a very barebone style block, and you will need to style it yoursel
 
 ## 💡 Install via Composer:
 ```bash
-composer require dekode-library/carousel-wrapper:2.0.0
+composer require dekode-library/carousel-wrapper:2.2.0
 ```
 
 ## Usage
@@ -40,5 +40,34 @@ you can find here: https://swiperjs.com/get-started
         }
     }
 }
+```
 
+### Variations
+You can create variations of the carousel-wrapper block, and define the inner blocks you want to use
+```json
+	"dekode-library/carousel-wrapper": {
+		"allowedInnerBlocks": ["core/pullquote"],
+		"template": [["core/pullquote", {}]],
+		"swiperSettings": {
+			"loop": true, 
+			"slidesPerView": 1,
+			"autoHeight": true
+		},
+		"variations": {
+			"tester": {
+				"name": "mega-slider",
+				"title": "Mega Slider template",
+				"icon": "media-video",
+				"description": "A mega slide.",
+				"attributes": {
+					"allowedInnerBlocks": ["core/image"],
+					"template": [["core/image", {}]],
+					"swiperSettings": {
+						"loop": false, 
+						"slidesPerView": 1
+					}
+				}
+			}
+		}
+	},
 ```

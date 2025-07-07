@@ -17,6 +17,10 @@
         {
           "text": "Color Select Popup",
           "link": "/dk-library/components/components/color-select-popup/"
+        },
+        {
+          "text": "RepeaterField Component for WordPress Gutenberg",
+          "link": "/dk-library/components/components/repeater/"
         }
       ]
     },
@@ -51,6 +55,10 @@
           "link": "/dk-library/components/meta/checkbox-control/"
         },
         {
+          "text": "LibMetaColorPopupControl",
+          "link": "/dk-library/components/meta/color-popup-conrol/"
+        },
+        {
           "text": "LibMetaLinkControl",
           "link": "/dk-library/components/meta/link-select-control/"
         },
@@ -61,6 +69,10 @@
         {
           "text": "Meta Radio Control",
           "link": "/dk-library/components/meta/radio-control/"
+        },
+        {
+          "text": "MetaRepeater",
+          "link": "/dk-library/components/meta/repeater/"
         },
         {
           "text": "Meta Checkbox Control",
@@ -147,6 +159,11 @@
         {
           "text": "Featured Link",
           "link": "/dk-library/library/featured-link/",
+          "items": []
+        },
+        {
+          "text": "Geolocation",
+          "link": "/dk-library/library/geolocation/",
           "items": []
         },
         {

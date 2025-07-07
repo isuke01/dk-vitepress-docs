@@ -117,6 +117,10 @@ function copyReadmesRecursive(sourceDir, targetDir, isLibrary = false, originalS
   const entries = fs.readdirSync(sourceDir, { withFileTypes: true });
 
   for (const entry of entries) {
+      if (entry.name === 'node_modules') {
+        continue;
+      }
+
     const sourcePath = path.join(sourceDir, entry.name);
     const targetPath = path.join(targetDir, entry.name);
 
